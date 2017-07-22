@@ -1,0 +1,123 @@
+
+h1{
+    width: 785px;
+    background-color:orange;
+    position: static;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.youtube{
+    width:100%;
+    position: static;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.main{
+  width: 785px;
+  top:150px;
+  position:　relative;
+}
+
+.page-left{
+  width: 580px;
+  margin-right:5px;
+  position: fixed;
+}
+
+.page-right{
+  float: left;
+  width: 720px;
+  position:  fixed;
+  top: 65px;
+  bottom: 0;
+  left: 590px;
+  right: 0;
+}
+
+.movie{
+  width: 100%;
+  height: 335px;
+  position: relative;
+  background-color: blue;
+}
+.inner_movie{
+    width: 560px;
+    height: 315px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+}
+
+.buttonzone{
+  width: 100%;
+  height:300px;
+  background-color: red;
+  position: relative;
+  top: 70px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.button{
+  position: relative;
+  top: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.graph{
+  width: 100%;
+  height: 200px;
+  background-color: green;
+  position: absolute;
+}
+
+.sheet{
+  width:100%;
+  height:300px;
+  background-color:yellow;
+  position: relative;
+  top: 370px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.court{
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.check{
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.p_time{
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.button_txt{
+  font-size:88.81%;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}

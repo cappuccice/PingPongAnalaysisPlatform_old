@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+  <meta charset="utf-8">
+  <title>table_tennis</title>
+  <link rel="stylesheet" href="table_tennis.css">
+ </head>
+ <body>
+   <div class="page">
+     <header>
+       <h1>TEST</h1>
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+     </header>
+
+     <main>
+        <div class="page-left">
+          <div class="youtube">
+            <input type="text" id="url" name="url" size=85>
+            <button type="button" name="aaa" value="aaa" onclick="test()">
+              <font size="2">送信</font>
+            </button>
+          </div>
+
+          <div class="movie">
+          <div class="inner_movie">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/eCMKIstb8W4?ecver=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+
+
+        <div class="page-right">
+          <div class="buttonzone">
+            <div class="button_txt">
+              打球回数
+              <br><br>
+              サービス
+              <br><br><br><br><br><br><br>
+              BH
+              <br>
+              縦回転
+              <br>
+              横回転
+              <br>
+              逆回転
+              <br><br><br><br><br><br><br>
+              ドライブ
+              <br>
+              ストップ
+              <br>
+              ツッツキ
+              <br>
+              フリック
+              <br>
+              チキータ
+              <br><br>
+              回り込み
+              <br><br>
+              バック
+              <br>
+              ミドル
+              <br>
+              フォア
+            </div>
+            <div class="button">
+              <div class="p_time">
+                <input size="1" name="p_time">
+              </div>
+              <div class="check">
+                <br>
+                <input type="checkbox">
+              </div>
+              <br>
+              <div class="court">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <br>
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <br>
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+              </div>
+              <br>
+              <div class="check">
+                <input type="checkbox">
+                <br>
+                <input type="checkbox">
+                <br>
+                <input type="checkbox">
+                <br>
+                <input type="checkbox">
+              </div>
+              <br>
+              <div class="court">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <br>
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <br>
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+              </div>
+              <br>
+              <div class="check">
+                <input type="checkbox">
+                <br>
+                <input type="checkbox">
+                <br>
+                <input type="checkbox">
+                <br>
+                <input type="checkbox">
+                <br>
+                <input type="checkbox">
+              </div>
+              <br>
+              <div class="check">
+                <input type="checkbox">
+
+              </div>
+              <br>
+              <div class="check">
+                <input type="checkbox">
+                <br>
+                <input type="checkbox">
+                <br>
+                <input type="checkbox">
+
+              </div>
+            </div>
+            <br>
+            <div class="button">
+              <div class="p_time">
+                <input size="1" name="p_time">
+                <button>送信</button>
+              </div>
+              <div class="check">
+                <br>
+                <input type="checkbox">
+              </div>
+              <br>
+              <div class="court">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <br>
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <br>
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+              </div>
+              <br>
+              <div class="check">
+                <input type="checkbox">
+                <br>
+                <input type="checkbox">
+                <br>
+                <input type="checkbox">
+                <br>
+                <input type="checkbox">
+              </div>
+              <br>
+              <div class="court">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <br>
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <br>
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+              </div>
+              <br>
+              <div class="check">
+                <input type="checkbox">
+                <br>
+                <input type="checkbox">
+                <br>
+                <input type="checkbox">
+                <br>
+                <input type="checkbox">
+                <br>
+                <input type="checkbox">
+              </div>
+              <br>
+              <div class="check">
+                <input type="checkbox">
+
+              </div>
+              <br>
+              <div class="check">
+                <input type="checkbox">
+                <br>
+                <input type="checkbox">
+                <br>
+                <input type="checkbox">
+
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="sheet">
+          データシート
+        </div>
+     </main>
+   </div> <!-- .page -->
+   <script src="sample.js"></script>
+ </body>
+
+
+<script type="text/javascript">
+  function test(){
+    //inputフィールドのテキスト内容を文字列として取得
+    var str = document.getElementById("url").value
+
+    //下の関数が起動
+    //str ->上の文字列(埋め込みリンク)
+    //"\"" ->"で文字列を分割する
+    var youtube_url = splitString(str,"\"");
+
+    console.log(youtube_url);
+
+    //埋め込みリンクをidがmovieのsrc(ソース)に適応
+    document.getElementById("movie").src = youtube_url;
+  }
+
+  //渡された文字列を分割する関数
+  function splitString (stringToSplit,separator) {
+    //splitを使うと、指定した文字で分割できる
+    //今回の場合は"
+    var arrayOfStrings = stringToSplit.split(separator);
+
+    //分割した文字列は配列に入る
+    //それを表示している
+    for (var i = 0; i < arrayOfStrings.length; i++) {
+      console.log(i + arrayOfStrings[i]);;
+    }
+    //分割した文字列の配列5番目にurlが入っているのでリターン
+    return arrayOfStrings[5];
+  }
+
+
+</script>
+
+</html>
