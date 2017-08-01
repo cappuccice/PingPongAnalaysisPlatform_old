@@ -30,69 +30,12 @@
 
         <div class="page-right">
           <div class="buttonzone">
+            レット　サービス位置　　トスの高さ　　打法　　コース
+            <br>
             <div class="button_txt">
-              打球回数
-              <br><br>
-              サービス
-              <br><br><br><br><br><br><br>
-              BH
-              <br>
-              縦回転
-              <br>
-              横回転
-              <br>
-              逆回転
-              <br><br><br><br><br><br><br>
-              ドライブ
-              <br>
-              ストップ
-              <br>
-              ツッツキ
-              <br>
-              フリック
-              <br>
-              チキータ
-              <br><br>
-              回り込み
-              <br><br>
-              バック
-              <br>
-              ミドル
-              <br>
-              フォア
             </div>
             <div class="button">
-              <div class="p_time">
-                <input size="1" name="p_time">
-              </div>
-              <div class="check">
-                <br>
-                <input type="checkbox">
-              </div>
               <br>
-              <div class="court">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <br>
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <br>
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-              </div>
-              <br>
-              <div class="check">
-                <input type="checkbox">
-                <br>
-                <input type="checkbox">
-                <br>
-                <input type="checkbox">
-                <br>
-                <input type="checkbox">
-              </div>
               <br>
               <div class="court">
                 <input type="checkbox">
@@ -147,14 +90,6 @@
             </div>
             <br>
             <div class="button">
-              <div class="p_time">
-                <input size="1" name="p_time">
-                <button>送信</button>
-              </div>
-              <div class="check">
-                <br>
-                <input type="checkbox">
-              </div>
               <br>
               <div class="court">
                 <input type="checkbox">
@@ -168,58 +103,49 @@
                 <input type="checkbox">
                 <input type="checkbox">
                 <input type="checkbox">
-              </div>
-              <br>
-              <div class="check">
-                <input type="checkbox">
-                <br>
-                <input type="checkbox">
-                <br>
-                <input type="checkbox">
-                <br>
-                <input type="checkbox">
-              </div>
-              <br>
-              <div class="court">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <br>
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <br>
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-              </div>
-              <br>
-              <div class="check">
-                <input type="checkbox">
-                <br>
-                <input type="checkbox">
-                <br>
-                <input type="checkbox">
-                <br>
-                <input type="checkbox">
-                <br>
-                <input type="checkbox">
-              </div>
-              <br>
-              <div class="check">
-                <input type="checkbox">
-
               </div>
               <br>
               <div class="check">
                 <form>
-                  <select name="都道府県">
+                  <select name="打法">
+                    <option value="1">横回転</option>
+                    <option value="2" selected>巻き込み</option>
+                    <option value="3">YG</option>
+                    <option value="4">縦回転</option>
+                    <option value="5">バックハンド</option>
+                    <option value="6">しゃがみ</option>
+                  </select>
+                </form>
+              </div>
+              <br>
+              <div class="check">
+                <form>
+                  <select name="トスの高さ">
+                    <option value="1">高</option>
+                    <option value="2" selected>中</option>
+                    <option value="3">低</option>
+                  </select>
+                </form>
+              </div>
+              <br>
+              <div class="check">
+                <form>
+                  <select name="サービス位置">
                     <option value="1">フォア</option>
                     <option value="2" selected>ミドル</option>
                     <option value="3">バック</option>
                   </select>
                 </form>
               </div>
+              <div class="check">
+                <br>
+                <input type="checkbox">
+              </div>
+            </div>
+            <br>
+            <button type="button" name="aaa" value="aaa" onclick="test()">
+              <font size="2">送信</font>
+            </button>
             </div>
           </div>
           </div>
@@ -229,7 +155,7 @@
         </div>
      </main>
    </div> <!-- .page -->
-   <script src="sample.js"></script>
+   <script src="table_tennis.js"></script>
  </body>
 
 
