@@ -16,143 +16,18 @@
         <div class="page-left">
           <div class="youtube">
             <input type="text" id="url" name="url" size=85>
-            <button type="button" name="aaa" value="aaa" onclick="test()">
+            <button type="button" name="movieChange" value="movieChange" onclick="movieChange()">
               <font size="2">送信</font>
             </button>
           </div>
-
           <div class="movie">
-          <div class="inner_movie">
+            <div class="inner_movie">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/eCMKIstb8W4?ecver=1" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
-
-
         <div class="page-right">
           <div class="buttonzone">
-            レット　サービス位置　　トスの高さ　　打法　　コース
-            <br>
-            <div class="button_txt">
-            </div>
-            <div class="button">
-              <br>
-              <br>
-              <div class="court">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <br>
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <br>
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-              </div>
-              <br>
-              <div class="check">
-                <form>
-                  <select name="打法">
-                    <option value="1">横回転</option>
-                    <option value="2" selected>巻き込み</option>
-                    <option value="3">YG</option>
-                    <option value="4">縦回転</option>
-                    <option value="5">バックハンド</option>
-                    <option value="6">しゃがみ</option>
-                  </select>
-                </form>
-              </div>
-              <br>
-              <div class="check">
-                <form>
-                  <select name="トスの高さ">
-                    <option value="1">高</option>
-                    <option value="2" selected>中</option>
-                    <option value="3">低</option>
-                  </select>
-                </form>
-              </div>
-              <br>
-              <div class="check">
-                <form>
-                  <select name="サービス位置">
-                    <option value="1">フォア</option>
-                    <option value="2" selected>ミドル</option>
-                    <option value="3">バック</option>
-                  </select>
-                </form>
-              </div>
-              <div class="check">
-                <br>
-                <input type="checkbox">
-              </div>
-            </div>
-            <br>
-            <hr size="1" width=100% color="black "align="center">
-            <br>
-            <div class="button">
-              <br>
-              <div class="court">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <br>
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <br>
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-              </div>
-              <br>
-              <div class="check">
-                <form>
-                  <select name="打法">
-                    <option value="1">横回転</option>
-                    <option value="2" selected>巻き込み</option>
-                    <option value="3">YG</option>
-                    <option value="4">縦回転</option>
-                    <option value="5">バックハンド</option>
-                    <option value="6">しゃがみ</option>
-                  </select>
-                </form>
-              </div>
-              <br>
-              <div class="check">
-                <form>
-                  <select name="トスの高さ">
-                    <option value="1">高</option>
-                    <option value="2" selected>中</option>
-                    <option value="3">低</option>
-                  </select>
-                </form>
-              </div>
-              <br>
-              <div class="check">
-                <form>
-                  <select name="サービス位置">
-                    <option value="1">フォア</option>
-                    <option value="2" selected>ミドル</option>
-                    <option value="3">バック</option>
-                  </select>
-                </form>
-              </div>
-              <div class="check">
-                <br>
-                <input type="checkbox">
-              </div>
-            </div>
-            <br>
-            <button type="button" name="nextBall" value="nextBall" onclick="nextBall()">
-              <font size="2">次の打球</font>
-            </button>
-            <button type="button" name="nextService" value="nextService" onclick="nextService()">
-              <font size="2">次のサーブ</font>
-            </button>
-            </div>
-          </div>
+
           </div>
         </div>
         <div class="sheet">
@@ -162,40 +37,4 @@
    </div> <!-- .page -->
    <script src="table_tennis.js"></script>
  </body>
-
-
-<script type="text/javascript">
-  function test(){
-    //inputフィールドのテキスト内容を文字列として取得
-    var str = document.getElementById("url").value
-
-    //下の関数が起動
-    //str ->上の文字列(埋め込みリンク)
-    //"\"" ->"で文字列を分割する
-    var youtube_url = splitString(str,"\"");
-
-    console.log(youtube_url);
-
-    //埋め込みリンクをidがmovieのsrc(ソース)に適応
-    document.getElementById("movie").src = youtube_url;
-  }
-
-  //渡された文字列を分割する関数
-  function splitString (stringToSplit,separator) {
-    //splitを使うと、指定した文字で分割できる
-    //今回の場合は"
-    var arrayOfStrings = stringToSplit.split(separator);
-
-    //分割した文字列は配列に入る
-    //それを表示している
-    for (var i = 0; i < arrayOfStrings.length; i++) {
-      console.log(i + arrayOfStrings[i]);;
-    }
-    //分割した文字列の配列5番目にurlが入っているのでリターン
-    return arrayOfStrings[5];
-  }
-
-
-</script>
-
 </html>
