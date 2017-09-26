@@ -1,12 +1,30 @@
 
-h1{
-    width: 785px;
-    background-color:orange;
-    position: static;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+* {
+	margin:0; padding:0; 	/*全要素のマージン・パディングをリセット*/
+	line-height:1.5;	/*全要素の行の高さを1.5倍にする*/
+	color:#333333;		/*文字色*/
+
+}
+body {
+	background-color:#999999;	/*ページ全体の背景色*/
+	text-align:center;		/*IE6以下でセンタリングするための対策*/
+}
+div#pagebody {
+	width:796px; margin:0 auto;	/*内容全体をセンタリング*/
+	text-align:left;	/*テキストの配置を左揃えにする*/
+	background-image:url("images/bg_pagebody.gif");	/*内容全体の背景*/
+	background-repeat:repeat-y;		/*背景画像を縦方向に繰り返す*/
+	background-color:#ffffff;		/*内容全体の背景色*/
+}
+
+
+header{
+    width: 100%;
+    height: 60px;
+    background-color:black;
+    color: white;
+    text-align:left;
+    font-size: 200%;
 }
 
 .youtube{
@@ -19,7 +37,7 @@ h1{
 }
 
 .main{
-  top:150px;
+  background-color: navy;
   position:　relative;
 }
 
@@ -43,7 +61,6 @@ h1{
   width: 100%;
   height: 335px;
   position: relative;
-  background-color: blue;
 }
 .inner_movie{
     width: 560px;
@@ -57,11 +74,12 @@ h1{
 }
 
 .buttonzone{
-  width: 100%;
+  padding: 10px;
+  width: 600px;
   height:300px;
-  background-color: red;
+  background-color: grey;
   position: relative;
-  top: 70px;
+  top: 30px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -82,41 +100,14 @@ h1{
 .sheet{
   overflow: auto;
   position: fixed;
-  background-color: yellow;
-  top: 500px;
+  top: 450px;
   bottom: 0;
   left: 0;
   right: 0;
 }
 
-.court{
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-}
-
-.check{
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-}
-
-.p_time{
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-}
-
-.button_txt{
-  font-size:88.81%;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-}
-
-
-
 th{
+    height: 10px;
     padding:5px;
     background:#266;
     border:1px solid #777;
@@ -124,6 +115,7 @@ th{
 }
 
 td{
+  height: 10px;
   padding:5px;
   background:#eee;
   border:1px solid #777;
