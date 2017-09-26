@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+  <meta charset="utf-8">
+  <title>table_tennis</title>
+  <link rel="stylesheet" href="table_tennis.css">
+  <header>PPAP</header>
+  <!-- jqueryの読み込み-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ </head>
+ <body>
+  <div id="page">
+    <div class="page-left">
+      <div class="youtube">
+        <input type="text" id="url" name="url" size=85>
+        <button type="button" name="table_tennis" value="table_tennis" onclick="movieChange()">
+          <font size="2">送信</font>
+        </button>
+      </div>
+      <div class="movie">
+        <div class="inner_movie">
+          <iframe id="movie_src" width="560" height="315" src="https://www.youtube.com/embed/NSUhUugvPBU?ecver=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="page-right">
+        <div class="buttonzone">
+          <img id = "PPAP"　src="PPAPS.jpg" alt="howto" width="600" height="300">
+        </div>
+      </div>
+      <div class="sheet">
+        <table id="scoreTable">
+          <thead id="inputhead">
+            <tr id="oppai">
+              <th colspan="6">サービス</th>
+              <th colspan="4" id = "oppai5">レシーブ</th>
+            </tr>
+            <tr id="oppai2">
+              <th>サービス</th>
+              <th>レット</th>
+              <th>サービス位置</th>
+              <th>トスの高さ</th>
+              <th>打法</th>
+              <th>コース</th>
+
+              <th>打球位置</th>
+              <th>ラケット面</th>
+              <th>打法</th>
+              <th>コース</th>
+            </tr>
+            <tr id="oppai3">
+              <th><!--input type="text" size="9" id="player" value=""--></th>
+              <th><input type="text" size="6" id="net" value=""></th>
+              <th><input type="text" size="10" id="service" value=""></th>
+              <th><input type="text" size="10" id="higher" value=""></th>
+              <th><input type="text" size="8" id="form" value=""></th>
+              <th><input type="text" size="6" id="course" value=""></th>
+              <th><input type="text" size="8" id="receive" value=""></th>
+              <th><input type="text" size="10" id="side" value=""></th>
+              <th><input type="text" size="8" id="rform" value=""></th>
+              <th><input type="text" size="6" id="rcourse" value=""></th>
+            </tr>
+          </thead>
+          <tbody id="table_body">
+            <tr>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!-- .page -->
+  <script src="table_tennis.js"></script>
+ </body>
+</html>

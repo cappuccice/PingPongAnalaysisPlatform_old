@@ -1,0 +1,186 @@
+-- phpMyAdmin SQL Dump
+-- version 4.4.10
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost:8889
+-- Generation Time: 2017 年 9 月 22 日 13:36
+-- サーバのバージョン： 5.5.42
+-- PHP Version: 5.6.10
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `tabletennis_db`
+--
+
+-- --------------------------------------------------------
+
+--
+-- テーブルの構造 `operate_receive_a_tb`
+--
+
+CREATE TABLE `operate_receive_a_tb` (
+  `game_id` int(11) NOT NULL,
+  `tikita_a` int(11) NOT NULL,
+  `flick_a` int(11) NOT NULL,
+  `stop_a` int(11) NOT NULL,
+  `push_a` int(11) NOT NULL,
+  `flow_a` int(11) NOT NULL,
+  `drive_strong_a` int(11) NOT NULL,
+  `drive_weak_a` int(11) NOT NULL,
+  `cut_a` int(11) NOT NULL,
+  `reverse_tikita_a` int(11) NOT NULL,
+  `receive_course_fore_short_a` int(11) NOT NULL,
+  `receive_course_middle_short_a` int(11) NOT NULL,
+  `receive_course_back_short_a` int(11) NOT NULL,
+  `receive_course_fore_half_long_a` int(11) NOT NULL,
+  `receive_course_middle_half_long_a` int(11) NOT NULL,
+  `receive_course_back_half_long_a` int(11) NOT NULL,
+  `receive_course_fore_long_a` int(11) NOT NULL,
+  `receive_course_middle_long_a` int(11) NOT NULL,
+  `receive_course_back_long_a` int(11) NOT NULL,
+  `racket_fore_a` int(11) NOT NULL,
+  `racket_back_a` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- テーブルの構造 `operate_receive_b_tb`
+--
+
+CREATE TABLE `operate_receive_b_tb` (
+  `game_id` int(5) NOT NULL,
+  `tikita_b` int(5) NOT NULL,
+  `flick_b` int(5) NOT NULL,
+  `stop_b` int(5) NOT NULL,
+  `push_b` int(5) NOT NULL,
+  `flow_b` int(5) NOT NULL,
+  `drive_strong_b` int(5) NOT NULL,
+  `drive_weak_b` int(5) NOT NULL,
+  `cut_b` int(5) NOT NULL,
+  `reverse_tikita_b` int(5) NOT NULL,
+  `receive_course_fore_short_b` int(5) NOT NULL,
+  `receive_course_middle_short_b` int(5) NOT NULL,
+  `receive_course_back_short_b` int(5) NOT NULL,
+  `receive_course_fore_half_long_b` int(5) NOT NULL,
+  `receive_course_middle_half_long_b` int(5) NOT NULL,
+  `receive_course_back_half_long_b receive_course_fore_long_b` int(5) NOT NULL,
+  `receive_course_fore_long_b` int(5) NOT NULL,
+  `receive_course_middle_long_b` int(5) NOT NULL,
+  `receive_course_back_long_b` int(5) NOT NULL,
+  `racket_fore_b` int(5) NOT NULL,
+  `racket_back_b` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- テーブルの構造 `operate_service_a_tb`
+--
+
+CREATE TABLE `operate_service_a_tb` (
+  `game_id` int(5) NOT NULL,
+  `time_out_a` int(5) NOT NULL,
+  `let_a` int(5) NOT NULL,
+  `spin_horizontal_a` int(5) NOT NULL,
+  `spin_vertical_a` int(5) NOT NULL,
+  `yg_a` int(5) NOT NULL,
+  `wind_a` int(5) NOT NULL,
+  `crouch_a` int(5) NOT NULL,
+  `service_course_fore_short_a` int(5) NOT NULL,
+  `service_course_middle_short_a` int(5) NOT NULL,
+  `service_course_back_short_a` int(5) NOT NULL,
+  `service_course_fore_half_long_a` int(5) NOT NULL,
+  `service_course_middle_half_long_a` int(5) NOT NULL,
+  `service_course_back_half_long_a` int(5) NOT NULL,
+  `service_course_fore_long_a` int(5) NOT NULL,
+  `service_course_middle_long_a` int(5) NOT NULL,
+  `service_course_back_long_a` int(5) NOT NULL,
+  `toss_high_a` int(5) NOT NULL,
+  `toss_center_a` int(5) NOT NULL,
+  `toss_low_a` int(5) NOT NULL,
+  `position_fore_a` int(5) NOT NULL,
+  `position_middle_a` int(5) NOT NULL,
+  `position_back_a` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- テーブルの構造 `operate_service_b_tb`
+--
+
+CREATE TABLE `operate_service_b_tb` (
+  `game_id` int(11) NOT NULL,
+  `time_out_b` int(11) NOT NULL,
+  `let_b` int(11) NOT NULL,
+  `spin_horizontal_b` int(11) NOT NULL,
+  `spin_vertical_b` int(11) NOT NULL,
+  `yg_b` int(11) NOT NULL,
+  `back_hand_b` int(11) NOT NULL,
+  `wind_b` int(11) NOT NULL,
+  `crouch_b` int(11) NOT NULL,
+  `service_course_fore_short_b` int(11) NOT NULL,
+  `service_course_middle_short_b` int(11) NOT NULL,
+  `service_course_back_short_b` int(11) NOT NULL,
+  `service_course_fore_half_long_b` int(11) NOT NULL,
+  `service_course_middle_half_long_b` int(11) NOT NULL,
+  `service_course_back_half_long_b` int(11) NOT NULL,
+  `service_course_fore_long_b` int(11) NOT NULL,
+  `service_course_middle_long_b` int(11) NOT NULL,
+  `service_course_back_long_b` int(11) NOT NULL,
+  `toss_high_b` int(11) NOT NULL,
+  `toss_center_b` int(11) NOT NULL,
+  `toss_low_b` int(11) NOT NULL,
+  `position_fore_b` int(11) NOT NULL,
+  `position_middle_b` int(11) NOT NULL,
+  `position_back_b` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- テーブルの構造 `player_name_tb`
+--
+
+CREATE TABLE `player_name_tb` (
+  `player_name_id` int(5) NOT NULL,
+  `player_name_a` varchar(10) NOT NULL,
+  `player_name_b` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `operate_receive_a_tb`
+--
+ALTER TABLE `operate_receive_a_tb`
+  ADD PRIMARY KEY (`game_id`);
+
+--
+-- Indexes for table `operate_receive_b_tb`
+--
+ALTER TABLE `operate_receive_b_tb`
+  ADD PRIMARY KEY (`game_id`);
+
+--
+-- Indexes for table `operate_service_a_tb`
+--
+ALTER TABLE `operate_service_a_tb`
+  ADD PRIMARY KEY (`game_id`);
+
+--
+-- Indexes for table `operate_service_b_tb`
+--
+ALTER TABLE `operate_service_b_tb`
+  ADD PRIMARY KEY (`game_id`);
+
+--
+-- Indexes for table `player_name_tb`
+--
+ALTER TABLE `player_name_tb`
+  ADD PRIMARY KEY (`player_name_id`);
