@@ -345,6 +345,7 @@ $(function(){
 
 
 
+
 function movieChange(){
   //inputフィールドのテキスト内容を文字列として取得
   var str = document.getElementById("url").value
